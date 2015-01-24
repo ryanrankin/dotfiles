@@ -365,7 +365,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-#defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
@@ -545,7 +545,7 @@ defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 0;"name" = "SOURCE";}' \
 	'{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
 	'{"enabled" = 0;"name" = "MENU_OTHER";}' \
-	'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
+	'{"enabled" = 1;"name" = "MENU_CONVERSION";}' \
 	'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
 	'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
 	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
